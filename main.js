@@ -268,14 +268,15 @@ function getRandomhexColor() {
 const cards = document.querySelectorAll(".card");
 
 const ChangeColor = (a) => {
+
     for (let i of cards) {
         i.style.backgroundColor = "";
     };
-    a.style.backgroundColor = getRandomhexColor();
+    if(a.target.className == "card"){
+        a.target.style.backgroundColor = getRandomhexColor();
+    }
 
 }
-
-
 
 for (let i of cards) {
     i.addEventListener('click', ChangeColor)
