@@ -272,7 +272,7 @@ let data = [
         i.style.backgroundColor = "";
     }
      a.style.backgroundColor = getRandomhexColor();
-     }
+     },
 
 
 
